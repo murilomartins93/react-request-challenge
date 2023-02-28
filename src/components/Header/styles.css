@@ -1,0 +1,13 @@
+header {
+  background-color: var(--rrc-bg-primary);
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--rrc-font-primary);
+}
