@@ -14,7 +14,7 @@ type resultData = {
 export default function Result() {
   const params = useParams();
   const user = String(params.user);
-  
+
   const [result, setResult] = useState<resultData>();
 
   useEffect(() => {
@@ -34,9 +34,7 @@ export default function Result() {
     <section id="result-section">
       {result ? (
         <div className="rrc-result-card rrc-container rrc-mt54">
-          <div className="rrc-profile-img">
-            <img src={result.avatar_url} />
-          </div>
+          <img src={result.avatar_url} className="rrc-profile-img" />
           <div className="rrc-result-info">
             <h2>Informações</h2>
             <p>Perfil: {result.url}</p>
