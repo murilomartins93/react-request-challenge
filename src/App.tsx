@@ -1,8 +1,8 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import HomeIndex from "./routes/Home/HomeIndex";
-import SearchProfile from "./routes/Home/SearchProfile";
-import Results from "./routes/Home/SearchProfile/Results";
+import SearchProfile from "./routes/SearchProfile";
+import Result from "./routes/SearchProfile/Result";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
           <Route index element={<HomeIndex />} />
           <Route path="home" element={<Navigate to={"/"} />} />
           <Route path="search-profile" element={<SearchProfile />}>
-            <Route path="results" element={<Results />} />
+            <Route path="result/:user" element={<Result />} />
           </Route>
         </Route>
       </Routes>

@@ -1,6 +1,5 @@
 import "./styles.css";
-import { Outlet } from "react-router-dom";
-import * as searchService from "../../../services/search-service";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 type inputData = {
@@ -9,6 +8,8 @@ type inputData = {
 
 export default function SearchProfile() {
   
+  const navigate = useNavigate();
+
   const [inputData, setInputData] = useState<inputData>({
     user: "",
   });
@@ -21,7 +22,8 @@ export default function SearchProfile() {
 
   function handleFormSubmit(event: any) {
     event.preventDefault();
-    console.log(searchService.findUser(inputData.user));
+    console.log(inputData.user);
+    navigate(`/search-profile/result/${inputData.user}`);
   }
 
   return (
