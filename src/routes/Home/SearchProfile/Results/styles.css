@@ -1,0 +1,36 @@
+.rrc-results-card {
+  background-color: var(--rrc-results-bg);
+  border-radius: 8px;
+  padding: 45px 35px;
+}
+
+.rrc-profile-img {
+  width: 247px;
+}
+
+.rrc-results-info {
+  background-color: var(--rrc-results-info-bg);
+  border: 1px solid var(--rrc-results-border);
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+
+.rrc-results-info h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--rrc-results-title);
+  margin-bottom: 19px;
+}
+
+.rrc-results-info p {
+  color: var(--rrc-results-font);
+  background-color: var(--rrc-results-info-bg);
+  border: 1px solid var(--rrc-results-border);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+}

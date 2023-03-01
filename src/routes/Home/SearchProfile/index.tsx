@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 export default function SearchProfile() {
   return (
     <main>
-      <form id="search-card">
+      <form id="search-card" className="rrc-mt54">
         <h1 className="rrc-card-title">Encontre um perfil Github</h1>
         <input
           name="profile"
