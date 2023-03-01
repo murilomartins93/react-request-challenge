@@ -54,3 +54,25 @@ main {
   max-width: 1250px;
   margin: 0 auto;
 }
+
+/* Button Styles */
+
+.rrc-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--rr-btn-font);
+  background-color: var(--rr-btn-bg);
+  width: 101px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rrc-btn:hover {
+  background-color: var(--rr-btn-font);
+  color: var(--rr-btn-bg);
+  border: 1px solid var(--rr-btn-bg);
+}
