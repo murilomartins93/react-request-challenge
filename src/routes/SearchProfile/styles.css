@@ -11,6 +11,7 @@
 .rrc-card-title {
   font-size: 26px;
   line-height: 46px;
+  font-weight: 500;
   color: var(--rrc-font-secondary);
 }
 

@@ -14,7 +14,7 @@ type resultData = {
 export default function Result() {
   const params = useParams();
   const user = String(params.user);
-
+  
   const [result, setResult] = useState<resultData>();
 
   useEffect(() => {
@@ -25,18 +25,19 @@ export default function Result() {
         setResult(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        setResult(undefined);
+        console.log(error.response.data);
       });
   }, [user]);
 
   return (
-    <section id="results-section rrc-mt54">
+    <section id="result-section">
       {result ? (
-        <div className="rrc-results-card">
+        <div className="rrc-result-card rrc-mt54">
           <div className="rrc-profile-img">
             <img src={result.avatar_url} />
           </div>
-          <div className="rrc-results-info">
+          <div className="rrc-result-info">
             <h2>Informações</h2>
             <p>Perfil: {result.url}</p>
             <p>Seguidores: {result.followers}</p>
@@ -45,9 +46,7 @@ export default function Result() {
           </div>
         </div>
       ) : (
-        <div>
-          <h1>Erro ao buscar usuário</h1>
-        </div>
+        <h1 className="rrc-result-error">Erro ao buscar usuário</h1>
       )}
     </section>
   );

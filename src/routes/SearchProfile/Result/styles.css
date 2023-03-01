@@ -1,4 +1,4 @@
-.rrc-results-card {
+.rrc-result-card {
   background-color: var(--rrc-results-bg);
   border-radius: 8px;
   padding: 45px 35px;
@@ -8,14 +8,14 @@
   width: 247px;
 }
 
-.rrc-results-info {
+.rrc-result-info {
   background-color: var(--rrc-results-info-bg);
   border: 1px solid var(--rrc-results-border);
   border-radius: 6px;
   padding: 10px 15px;
 }
 
-.rrc-results-info h2 {
+.rrc-result-info h2 {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -23,7 +23,7 @@
   margin-bottom: 19px;
 }
 
-.rrc-results-info p {
+.rrc-result-info p {
   color: var(--rrc-results-font);
   background-color: var(--rrc-results-info-bg);
   border: 1px solid var(--rrc-results-border);
@@ -33,4 +33,20 @@
   border-radius: 4px;
   margin-bottom: 5px;
   padding: 8px 10px;
+}
+
+.rrc-result-error {
+  color: var(--rrc-font-secondary);
+  font-size: 26px;
+  line-height: 46px;
+  font-weight: 500;
+  margin-top: 64px;
+}
+
+@media (min-width: 576px) {
+  .rrc-result-error {
+    color: var(--rrc-font-secondary);
+    font-size: 38px;
+    line-height: 46px;
+  }
 }
