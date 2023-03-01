@@ -1,0 +1,15 @@
+.rrc-error {
+  color: var(--rrc-font-secondary);
+  font-size: 26px;
+  line-height: 46px;
+  font-weight: 500;
+  margin-top: 20px
+}
+
+@media (min-width: 576px) {
+  .rrc-error {
+    color: var(--rrc-font-secondary);
+    font-size: 38px;
+    line-height: 46px;
+  }
+}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import HomeIndex from "./routes/Home/HomeIndex";
+import NotFound from "./routes/NotFound";
 import SearchProfile from "./routes/SearchProfile";
 import Result from "./routes/SearchProfile/Result";
 
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="search-profile" element={<SearchProfile />}>
             <Route path="result/:user" element={<Result />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
