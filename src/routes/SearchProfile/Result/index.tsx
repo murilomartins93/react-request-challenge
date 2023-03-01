@@ -37,10 +37,21 @@ export default function Result() {
           <img src={result.avatar_url} className="rrc-profile-img" />
           <div className="rrc-result-info">
             <h2>Informações</h2>
-            <p>Perfil: {result.url}</p>
-            <p>Seguidores: {result.followers}</p>
-            <p>Localidade: {result.location}</p>
-            <p>Nome: {result.name}</p>
+            <p className="rrc-result-field">
+              Perfil:{" "}
+              <a className="rrc-user-link" href={result.url} target="_blank">
+                {result.url}
+              </a>
+            </p>
+            <p className="rrc-result-field">
+              Seguidores: <span>{result.followers}</span>
+            </p>
+            <p className="rrc-result-field">
+              Localidade: <span>{result.location}</span>
+            </p>
+            <p className="rrc-result-field">
+              Nome: <span>{result.name}</span>
+            </p>
           </div>
         </div>
       ) : (
