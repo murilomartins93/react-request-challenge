@@ -33,7 +33,7 @@ export default function Result() {
   return (
     <section id="result-section">
       {result ? (
-        <div className="rrc-result-card rrc-mt54">
+        <div className="rrc-result-card rrc-container rrc-mt54">
           <div className="rrc-profile-img">
             <img src={result.avatar_url} />
           </div>

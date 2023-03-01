@@ -28,7 +28,7 @@ export default function SearchProfile() {
 
   return (
     <main>
-      <form id="search-card" className="rrc-mt54" onSubmit={handleFormSubmit}>
+      <form id="search-card" className="rrc-container rrc-mt54" onSubmit={handleFormSubmit}>
         <h1 className="rrc-card-title">Encontre um perfil Github</h1>
         <input
           name="user"

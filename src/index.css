@@ -49,6 +49,12 @@ main {
   padding: 20px;
 }
 
+@media (min-width: 576px) {
+  main {
+    padding: 40px;
+  }
+}
+
 /* Generic Styles */
 
 .rrc-container {

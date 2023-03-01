@@ -6,8 +6,14 @@ header {
 }
 
 nav {
-  padding: 20px;
+  padding-left: 20px;
   font-weight: 500;
   font-size: 24px;
   color: var(--rrc-font-primary);
+}
+
+@media (min-width: 576px) {
+  nav {
+    padding-left: 40px;
+  }
 }
