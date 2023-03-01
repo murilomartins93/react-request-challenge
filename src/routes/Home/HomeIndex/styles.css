@@ -1,0 +1,29 @@
+#rrc-home {
+  padding-left: 20px;
+}
+
+.rrc-home-titles {
+  padding: 27px 0;
+}
+
+#rrc-home h1 {
+  color: var(--rrc-section-title-font);
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#rrc-home h2 {
+  color: var(--rrc-section-subtitle-font);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  #rrc-home h1 {
+    font-size: 48px;
+  }
+
+  #rrc-home h2 {
+    font-size: 24px;
+  }
+}
