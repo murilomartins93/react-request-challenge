@@ -1,3 +1,40 @@
-.searchCard {
-    
+#search-card {
+  height: 270px;
+  background: var(--rrc-card-primary);
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rrc-card-title {
+  font-size: 26px;
+  line-height: 46px;
+  color: var(--rrc-font-secondary);
+}
+
+#card-input {
+  height: 40px;
+  max-width: 298px;
+  width: 100%;
+  color: var(--rrc-input-font);
+  background-color: var(--rrc-bg-secondary);
+  border: 1px solid var(--rrc-inputborder);
+  border-radius: 4px;
+  padding: 8px 17px;
+  outline: none;
+}
+
+#card-input::placeholder {
+  color: var(--rrc-placeholder);
+}
+
+@media (min-width: 576px) {
+  .rrc-searchCard {
+    padding: 54px 31px;
+  }
+  .rrc-card-title {
+    font-size: 38px;
+  }
 }

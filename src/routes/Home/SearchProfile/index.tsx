@@ -1,17 +1,22 @@
-import { Link } from "react-router-dom";
+import "./styles.css";
 import { Outlet } from "react-router-dom";
-import Button from "../../../components/Button";
 
 export default function SearchProfile() {
   return (
     <main>
-      <div className="searchCard">
-        <h1>Encontre um perfil Github</h1>
-        <input />
-        <Link to={"/search-profile/result"}>
-          <Button text="Encontrar" />
-        </Link>
-      </div>
+      <form id="search-card">
+        <h1 className="rrc-card-title">Encontre um perfil Github</h1>
+        <input
+          name="profile"
+          value=""
+          type="text"
+          id="card-input"
+          placeholder="Usuário Github"
+        />
+        <button type="submit" id="submit-search" className="rrc-btn">
+          Encontrar
+        </button>
+      </form>
       <Outlet />
     </main>
   );
